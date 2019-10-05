@@ -16,7 +16,7 @@
         <div class="container">
             <div class="login__background">
                 <div class="login__foto">
-                    <img :src="'img/login__foto.png'" :alt="'Foto de Perfil'">
+                    <img v-bind:src="'img/login__foto.png'" :alt="'Foto de Perfil'">
                 </div>
                 <div class="login__form">
                     <form class="form__user">
@@ -25,17 +25,18 @@
                         <input class="input__psw" type="text" v-model="password" name="password"
                             placeholder="Senha"><br>
 
-                        <input class="btn" :class="btnSubmit" type="submit" value="entrar">
+                        <button class="btn" :class="btnSubmit" type="submit" value="entrar">entrar</button>
                     </form>
                 </div>
                 <div class="feedback">
                     <a href="#">
-                        <img class="feedback__img" :src="'img/feedback.png'" :alt="'Críticas e sugestões'">
+                        <img class="feedback__img" :src="'img/feedback.png'" :alt="'Críticas e Sugestões aqui!'">
                     </a>
                 </div>
 
             </div>
         </div>
+
     </div>
     <script src="https://unpkg.com/vue"></script>
     <script src="script.js"></script>

@@ -6,7 +6,4 @@ var app = new Vue({
         password: "",
         btnSubmit: "btn__submit"
     }
-    methods: {
-        
-    }
 });
