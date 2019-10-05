@@ -30,7 +30,7 @@
     }
     
     .login__background {
-        background: rgb(133, 248, 197);
+        background: rgb(99, 155, 151);
         background: linear-gradient(34deg, rgb(137, 253, 201) 0%, rgba(164, 6, 255, 0.781) 46%, rgba(51, 0, 82, 0.698) 90%);
         text-align: center;
         width: 100%;
@@ -54,16 +54,23 @@
     
     .input__user, .input__psw {
         border: 0;
-        background-color: #f3f3f3;
-        color: #b8b8b8;
+        background-color: #e2e2e2;
+        color: #6d6d6d;
         padding: 10px;
         margin: 12px;
         border-radius: 5px;
     }
 
+    .feedback {
+        display: flex;
+        justify-content: flex-end;
+    }
     .feedback__img {
         border-radius: 100%;
-        width: 10%;
+        width:40%;
+        margin: 15px;
+        padding: 5px;
+        background-color: #5eb891;
     }
 } 
 
