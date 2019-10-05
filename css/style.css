@@ -24,8 +24,9 @@
     }
     
     .btn__submit {
-        padding: 10px 72px;
+        padding: 14px 79px;
         border: 0;
+        margin: 15px 0 15px 0;
     }
     
     .login__background {
@@ -51,9 +52,12 @@
         padding: 10px;
     }
     
-    .input__user, .input_psw {
+    .input__user, .input__psw {
+        border: 0;
+        background-color: #f3f3f3;
+        color: #b8b8b8;
         padding: 10px;
-        margin: 10px;
+        margin: 12px;
         border-radius: 5px;
     }
 
