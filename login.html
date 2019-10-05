@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link rel="stylesheet" href="css/style.css">
-    <title>Desafio PushStart - Login</title>
+    <title>Teste PushStart - Login</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="login__background">
-            <div class="login__foto">
-                <img src="img/login__foto.png">
+    <div id="app">
+        
+        <div class="container">
+            <div class="login__background">
+                <div class="login__foto">
+                    <img :src="'img/login__foto.png'" :alt="'Foto de Perfil'">
+                </div>
+                <div class="login__form">
+                    <form class="form__user">
+                        <input class="input__user" type="text" v-model="login" name="user" placeholder="Usuário"><br>
+
+                        <input class="input__psw" type="text" v-model="password" name="password"
+                            placeholder="Senha"><br>
+
+                        <input class="btn" :class="btnSubmit" type="submit" value="entrar">
+                    </form>
+                </div>
+                <div class="feedback">
+                    <a href="#">
+                        <img class="feedback__img" :src="'img/feedback.png'" :alt="'Críticas e sugestões'">
+                    </a>
+                </div>
+
             </div>
-            <div class="login__form">
-                <form class="form__user">
-                    <input class="input__user" type="text" name="user" placeholder="Usuário" ><br>
-                    <input class="input__psw" type="text" name="password" placeholder="Senha" ><br>
-                    
-                    <input class="btn btn__submit" type="submit" value="entrar">
-                </form>
-            </div>
-            <div class="feedback">
-                <a href="#">
-                    <img class="feedback__img" src="img/feedback.png">
-                </a>
-            </div>
-            
         </div>
     </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

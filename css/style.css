@@ -6,7 +6,7 @@
     }
     
     body {
-        font-family: Verdana, Tahoma, sans-serif;
+        font-family: Verdana, Arial, Tahoma, sans-serif;
         font-size: 18px;
         color: #000000;
     }
@@ -27,6 +27,7 @@
         padding: 14px 79px;
         border: 0;
         margin: 15px 0 15px 0;
+        font-weight: bold;
     }
     
     .login__background {
@@ -68,9 +69,10 @@
     .feedback__img {
         border-radius: 100%;
         width:40%;
-        margin: 15px;
-        padding: 5px;
+        margin: 12px;
+        padding: 10px;
         background-color: #5eb891;
+        box-shadow: #6d6d6d;
     }
 } 
 
