@@ -1,3 +1,5 @@
+
+
 var app = new Vue({
     el: "#app",
     data: {
@@ -5,5 +7,13 @@ var app = new Vue({
         login: "",
         password: "",
         btnSubmit: "btn__submit"
+    },
+
+    methods: {
+        signIn() {
+
+        },
+        // getUser (){},
     }
 });
+

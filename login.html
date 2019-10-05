@@ -14,9 +14,10 @@
     <div id="app">
         
         <div class="container">
+              
             <div class="login__background">
                 <div class="login__foto">
-                    <img v-bind:src="'img/login__foto.png'" :alt="'Foto de Perfil'">
+                    <img :src="'img/login__foto.png'" :alt="'Foto de Perfil'">
                 </div>
                 <div class="login__form">
                     <form class="form__user">
@@ -25,7 +26,7 @@
                         <input class="input__psw" type="text" v-model="password" name="password"
                             placeholder="Senha"><br>
 
-                        <button class="btn" :class="btnSubmit" type="submit" value="entrar">entrar</button>
+                        <button class="btn" :class="btnSubmit" type="submit" value="entrar" @click.prevent.stop="signIn()">entrar</button>
                     </form>
                 </div>
                 <div class="feedback">
@@ -33,7 +34,6 @@
                         <img class="feedback__img" :src="'img/feedback.png'" :alt="'Críticas e Sugestões aqui!'">
                     </a>
                 </div>
-
             </div>
         </div>
 
