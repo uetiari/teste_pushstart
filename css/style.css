@@ -12,7 +12,6 @@
     }
     
     .container {
-        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -23,12 +22,15 @@
         border-radius: 5px;
     }
     
-    /*LOGIN*/
-    .btn__submit {
+    .btn__signin, .btn__feedback {
         padding: 14px 79px;
         border: 0;
         margin: 15px 0 15px 0;
         font-weight: bold;
+    }
+
+    .btn__feedback {
+        padding: 14px 109px;
     }
     
     .login__background {
@@ -46,15 +48,15 @@
     
     }
     
-    .login__form {
+    .login__form, .feedback__form{
         background-color: #ffffff;
     }
     
-    .form__user {
+    .form__user{
         padding: 10px;
     }
     
-    .input__user, .input__psw {
+    .input__user, .input__psw , .feedback__name, .feedback__email, .feedback__comment{
         border: 0;
         background-color: #e2e2e2;
         color: #6d6d6d;
@@ -62,23 +64,61 @@
         margin: 12px;
         border-radius: 5px;
     }
-    /*FEEDBACK*/
+
     .feedback {
         display: flex;
         justify-content: flex-end;
     }
     .feedback__img {
         border-radius: 100%;
-        width:40%;
-        margin: 12px;
+        width: 20%;
+        margin: 10px;
         padding: 10px;
         background-color: #5eb891;
         box-shadow: #6d6d6d;
     }
-
-
-    
+    .topbar {
+        margin: 0;
+        background-color: #6802a7b2;
+        color: #ffffff;
+        font-size: 15px;
+        width: 100%;
+        height: 53px;
+        align-items: center;
+    }
+    .feedback__title {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .feedback__bar{
+        background-color: #5eb891;
+        color:#ffffff;
+        display: inline-flex;
+        font-size: 11px;
+        align-items: center;
+        padding: 15px;
+    }
+    .feedback__img-bar{
+        border-radius: 100%;
+        width: 25%;
+        padding: 10px;
+        background-color: #5eb891;
+        box-shadow: #6d6d6d;
+    }
+    .feedback__form{
+        justify-content: center;
+        display: flex;
+    }
+    .feedback__name, .feedback__email, .feedback__comment{
+        padding: 15px 45px ;
+        margin: 10px;
+    }
+    .feedback__comment {
+        padding-bottom: 60px;
+    }
 } 
+
 
 /* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){} */
 

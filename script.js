@@ -1,16 +1,25 @@
+
+Vue.component('top-bar', {
+    template: "#feedback__topbar"
+});
+
 var app = new Vue({
     el: "#app",
     data: {
-        titulo: "Teste PushStart - Login",
         login: "",
         password: "",
-        btnSubmit: "btn__submit"
+        btnSignIn: "btn__signin",
+        btnFeedback: "btn__feedback"
     },
 
     methods: {
         signIn() {
 
         },
+
+        feed() {
+
+        }
         // getUser (){},
     }
 });
