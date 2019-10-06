@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Teste PushStart - Feedback</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="topbar">Feedback</div>
+
+            <div class="feedback__bar">
+                <img class="feedback__img" :src="'img/feedback.png'" :alt="'Críticas e Sugestões aqui!'">
+            </div>
+
+            <div class="feedback__form">
+                <form class="feedback__user">
+                    <input class="feedback__name" type="text" v-model="name" name="name" placeholder="Nome"><br>
+
+                    <input class="feedback__email" type="email" v-model="email" name="email" placeholder="E-mail"><br>
+
+                    <input class="feedback__comment" type="text" v-model="comment" name="comment" placeholder="Deixe seu comentário..."><br> 
+
+                    <button class="btn" :class="btnSubmit" type="submit" value="enviar"
+                        @click.prevent.stop="signIn()">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

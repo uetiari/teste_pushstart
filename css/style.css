@@ -23,6 +23,7 @@
         border-radius: 5px;
     }
     
+    /*LOGIN*/
     .btn__submit {
         padding: 14px 79px;
         border: 0;
@@ -61,7 +62,7 @@
         margin: 12px;
         border-radius: 5px;
     }
-
+    /*FEEDBACK*/
     .feedback {
         display: flex;
         justify-content: flex-end;
@@ -74,6 +75,8 @@
         background-color: #5eb891;
         box-shadow: #6d6d6d;
     }
+
+
     
 } 
 
