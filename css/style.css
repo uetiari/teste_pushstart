@@ -64,7 +64,27 @@
         margin: 12px;
         border-radius: 5px;
     }
+/* timeline */
+    .timeline_post {
+        margin-top: 20px;
+    }
+    .post__container {
+        margin-top: 10px;
+    }
+    .post__perfil, .post__perfil-foto, .post__perfil-info, .post__legenda, .post__midia, .post__like {
+        border: 1px solid #ff0000;
+        align-items: center;
+    }
+    .post__perfil{
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 5px;
+    }
+    .post__perfil-foto, .post__perfil-info {
+        margin-right: 5px;
+    }
 
+/* timeline */
     .feedback {
         display: flex;
         justify-content: flex-end;
