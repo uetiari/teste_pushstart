@@ -76,7 +76,7 @@
         border: 1px solid #ff0000;
         align-items: center;
     }
-    .post__perfil{
+    .post__perfil, .post__legenda{
         display: flex;
         flex-flow: row nowrap;
         padding: 5px;
@@ -96,7 +96,7 @@
         margin: 10px;
         padding: 10px;
         background-color: #5eb891;
-        box-shadow: #6d6d6d;
+        z-index: 999999;
     }
     .topbar {
         margin: 0;
