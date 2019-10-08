@@ -19,7 +19,7 @@
                     <p class="feedback__title">Feedback</p>
                 </div>
             </template>
-                
+
             <div class="feedback__bar">
                 <img class="feedback__img-bar" :src="'img/feedback.png'" :alt="'Críticas e Sugestões aqui!'">
                 <p>
@@ -33,11 +33,12 @@
 
                     <input class="feedback__email" type="email" v-model="email" name="email" placeholder="E-mail"><br>
 
-                    <input class="feedback__comment" type="text" v-model="comment" name="comment" placeholder="Escreva seu comentário..."><br> 
+                    <input class="feedback__comment" type="text" v-model="comment" name="comment"
+                        placeholder="Escreva seu comentário..."><br>
 
                     <button class="btn" :class="btnFeedback" type="submit" value="enviar"
                         @click.prevent.stop="feed()">Enviar</button>
-                </form> 
+                </form>
             </div>
 
         </div>
@@ -45,6 +46,7 @@
 
     </div>
     <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
 

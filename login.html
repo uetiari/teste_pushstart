@@ -12,9 +12,9 @@
 
 <body>
     <div id="app">
-        
+
         <div class="container">
-              
+
             <div class="login__background">
                 <div class="login__foto">
                     <img :src="'img/login__foto.png'" :alt="'Foto de Perfil'">
@@ -26,7 +26,8 @@
                         <input class="input__psw" type="text" v-model="password" name="password"
                             placeholder="Senha"><br>
 
-                        <button class="btn" :class="btnSignIn" type="submit" value="entrar" @click.prevent.stop="signIn()">entrar</button>
+                        <button class="btn" :class="btnSignIn" type="submit" value="entrar"
+                            @click.prevent.stop="signIn()">Entrar</button>
                     </form>
                 </div>
                 <div class="feedback">
@@ -39,6 +40,7 @@
 
     </div>
     <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
 
