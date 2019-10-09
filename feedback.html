@@ -22,25 +22,19 @@
 
             <div class="feedback__bar">
                 <img class="feedback__img-bar" :src="'img/feedback.png'" :alt="'Críticas e Sugestões aqui!'">
-                <p>
-                    Deixe suas críticas e sugestões! Assim podemos melhorar o nosso conteúdo.
+                <p>Deixe suas críticas e sugestões! Assim podemos melhorar o nosso conteúdo.
                 </p>
             </div>
-
             <div class="feedback__form">
                 <form class="feedback__user">
                     <input class="feedback__name" type="text" v-model="name" name="name" placeholder="Nome"><br>
-
                     <input class="feedback__email" type="email" v-model="email" name="email" placeholder="E-mail"><br>
-
                     <input class="feedback__comment" type="text" v-model="comment" name="comment"
                         placeholder="Escreva seu comentário..."><br>
-
                     <button class="btn" :class="btnFeedback" type="submit" value="enviar"
                         @click.prevent.stop="feed()">Enviar</button>
                 </form>
             </div>
-
         </div>
 
 
